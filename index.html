@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+    <!--Added a link for jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Link to my stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Link to the CSS reset-->
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
+
+</head>
+
+
+
+<body>
+    <div class="jumbotron">
+    <h1 class="text-center">Crystal Game</h1>
+    <h3 class="text-center">Click on the crystals to try and match the random number! Don't overshoot!</h3>
+    <h6 id= Wins>Wins: 0</h6>
+    <h6 id= Wins>Loses: 0</h6>
+</div>
+
+    <div class="card-body">
+        <button id=button-1 class="btn btn-primary crystal" value = 0 ><img src="assets/images/chunk.png"></button>
+        <button id=button-2 class="btn btn-primary crystal" value = 0 ><img src="assets/images/shard.png"></button>
+        <button id=button-3 class="btn btn-primary crystal" value = 0 ><img src="assets/images/hot.png"></button>
+        <button id=button-4 class="btn btn-primary crystal" value = 0 ><img src="assets/images/orange.png"></button>
+        <br><br>
+    </div>
+
+    <div class="card-body">
+        <span class="badge badge-primary">Random Number: <p id=RandomNumber></p></span>
+        <span class="badge badge-primary">Player Sum: <p id=PlayerSum>0</p></span>
+        <!--<h6 id= RandomNumber>Match This: 0</h6>-->
+        <!--<h6 id= PlayerSum>Player Sum: 0</h6>-->
+    </div>
+
+
+
+
+<script language="JavaScript" src="assets/javascript/game.js"></script>
+
+</body> 
+</html>
